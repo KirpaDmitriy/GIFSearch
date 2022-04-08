@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>GIFts</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <script src="index.js"></script>
+    <body>
+        <div id="sentGIF" class="pictureBlock"><img id="sendGIF" class="imageGIF"></div>
+        <div id="selectGIFMenu" class="blockGIF"></div>
+        <div class="searchBlock">
+            <input id="textInput" type="text" class="searchField" oninput="handleInput()" placeholder="Напишите сообщение...">
+            <button class="runButton" type="submit" onclick="processText()">
+                <i class="run">GIF</i>
+            </button>
+        </div>
+    </body>
+</html>

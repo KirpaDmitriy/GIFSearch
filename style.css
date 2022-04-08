@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(45deg, pink, #0077FF);
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBlock {
+    position: fixed;
+    bottom: 0;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: azure;
+    height: 50px;
+    border-radius: 20px;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.runButton {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 60%;
+    background: linear-gradient(45deg, pink, #0077FF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    color: white;
+    cursor: pointer;
+}
+
+.runButton > i {
+    font-size: 100%;
+}
+
+.searchBlock:hover > .searchField {
+    width: 500px;
+    padding: 0 6px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 150%;
+}
+
+.searchBlock:hover > .runButton {
+    background: linear-gradient(45deg, pink, #0077FF 60%),
+                linear-gradient(135deg, azure, white 60%);
+}
+
+.runButton:active {
+    width: 100px;
+    height: 100px;
+}
+
+.searchField {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    width: 0;
+    transition: 0.4s;
+}
+
+.pictureBlock {
+    position:  relative;
+    top: 10px;
+    display: none;
+}
+
+.magicText {
+    display: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 150%;
+    font-style: italic;
+    background: linear-gradient(45deg, #0077FF 30%, violet 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: blueviolet;
+}
+
+.imageGIF {
+    display: flex;
+}
+
+.blockGIF {
+    display: block;
+    width: 30%;
+    height: 30%;
+    background: skyblue;
+    overflow-x: auto;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.searchResult {
+    display: inline-block;
+}
